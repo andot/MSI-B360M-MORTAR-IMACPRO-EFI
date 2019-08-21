@@ -110,6 +110,12 @@ Clover 驱动包含：
 
 ![截图加载失败](ScreenShot/SMBIOS@2x.png)
 
+如果你的显卡跟我一样是 RX 580 8G 2304sp 的话，建议把显卡设置页面设置为下图这样：
+
+![截图加载失败](ScreenShot/GPUConfig@2x.png)
+
+你会发现显卡功耗会降低 20w 左右。
+
 ## 系统截图
 
 ![截图加载失败](ScreenShot/neofetch@2x.png)
