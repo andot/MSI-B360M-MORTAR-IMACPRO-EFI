@@ -102,12 +102,13 @@ Clover 驱动包含：
 
 ## EFI 使用
 
-如果你的配置跟我上面配置相同或兼容，那么你可以直接使用该 EFI 进行安装。安装前请注意，建议用 Clover Configurator 重新生成并替换 SMBIOS 部分的内容，生成时，请选择 iMacPro1,1 机型，不要更改机型。
+如果你的配置跟我上面配置相同或兼容，那么你可以直接使用该 EFI 进行安装。安装前请注意，一定要用 Clover Configurator 重新生成并替换 SMBIOS 部分的内容，否则会因为机器有同一个硬件 ID 而被苹果封锁。生成时，请选择 iMacPro1,1 机型，不要更改机型。
 
 ![截图加载失败](ScreenShot/SMBIOS@2x.png)
 
 ## 系统截图
 
+![截图加载失败](ScreenShot/neofetch@2x.png)
 ![截图加载失败](ScreenShot/AboutMyMac@2x.png)
 ![截图加载失败](ScreenShot/Audio@2x.png)
 ![截图加载失败](ScreenShot/Microphone@2x.png)
@@ -119,3 +120,4 @@ Clover 驱动包含：
 ![截图加载失败](ScreenShot/BT@2x.png)
 ![截图加载失败](ScreenShot/GPU_Monitor@2x.png)
 ![截图加载失败](ScreenShot/GraphicsDriver@2x.png)
+![截图加载失败](ScreenShot/HWMonitorSMC2@2x.png)
