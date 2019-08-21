@@ -117,6 +117,7 @@ Clover 驱动包含：
 ![截图加载失败](ScreenShot/Audio@2x.png)
 ![截图加载失败](ScreenShot/Microphone@2x.png)
 ![截图加载失败](ScreenShot/Monitor@2x.png)
+![截图加载失败](ScreenShot/Monitor2@2x.png)
 ![截图加载失败](ScreenShot/VideoProc@2x.png)
 ![截图加载失败](ScreenShot/USB@2x.png)
 ![截图加载失败](ScreenShot/LAN@2x.png)
