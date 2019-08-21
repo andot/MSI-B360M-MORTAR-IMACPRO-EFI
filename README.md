@@ -79,7 +79,7 @@ Clover 驱动包含：
 
 系统驱动包含：
 
-* AppleALC.kext - 1.4.1
+* AppleALC.kext - 1.4.0
 * IntelMausi.kext - 1.0.1
 * Lilu.kext - 1.3.8
 * USBInjectAll.kext - 0.7.1
