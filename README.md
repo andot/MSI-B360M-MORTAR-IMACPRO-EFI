@@ -68,7 +68,7 @@
 
 经过一个多月的使用测试后，首次发布。
 
-这个 EFI 的特点是使用的是 `iMacPro1,1` 机型，只是用独显硬解，因此 CPU 有无核显都可以正常工作，且比使用核显硬解更正常。已做了 USB 定制，所有 USB 接口都可用，睡眠正常，唤醒正常。
+这个 EFI 的特点是使用的是 `iMacPro1,1` 机型，用独显硬解，因此 CPU 有无核显都可以正常工作，且比使用核显硬解更正常。已做了 USB 定制，所有 USB 接口都可用，睡眠正常，唤醒正常。
 
 Clover 版本为：5045。
 
@@ -106,7 +106,7 @@ Clover 驱动包含：
 
 ## EFI 使用
 
-如果你的配置跟我上面配置相同或兼容，那么你可以直接使用该 EFI 进行安装。安装前请注意，一定要用 Clover Configurator 重新生成并替换 SMBIOS 部分的内容，否则会因为机器有同一个硬件 ID 而被苹果封锁。生成时，请选择 iMacPro1,1 机型，不要更改机型。
+如果你的配置跟我上面配置相同或兼容，那么你可以直接使用该 EFI 进行安装。安装前请注意，一定要用 Clover Configurator 重新生成并替换 SMBIOS 部分的内容，否则会因为机器有同一个硬件 ID 而被苹果封锁。生成时，请选择 `iMacPro1,1` 机型，不要更改机型，如果你的 CPU 有核显，并且核显已经再 BIOS 中打开，也可以选择 `iMac19,2` 机型，这种情况下，核显可以和独显一起工作。
 
 ![截图加载失败](ScreenShot/SMBIOS@2x.png)
 
@@ -121,6 +121,8 @@ Clover 驱动包含：
 * CPU (单核：6079，多核：28401)：https://browser.geekbench.com/v4/cpu/14377865
 * Metal (131638)：https://browser.geekbench.com/v4/compute/4463241
 * OpenCL (133320): https://browser.geekbench.com/v4/compute/4463244
+
+![截图加载失败](ScreenShot/CINEBENCH20@2x.png)
 
 ## 系统截图
 
