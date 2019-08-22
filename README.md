@@ -116,6 +116,12 @@ Clover 驱动包含：
 
 你会发现显卡功耗会降低 20w 左右。
 
+## Geekbench 跑分
+
+* CPU (单核：6079，多核：28401)：https://browser.geekbench.com/v4/cpu/14377865
+* Metal (131638)：https://browser.geekbench.com/v4/compute/4463241
+* OpenCL (133320): https://browser.geekbench.com/v4/compute/4463244
+
 ## 系统截图
 
 ![截图加载失败](ScreenShot/neofetch@2x.png)
