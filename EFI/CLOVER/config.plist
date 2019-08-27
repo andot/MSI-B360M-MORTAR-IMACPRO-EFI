@@ -151,8 +151,6 @@
 		<false/>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
-		<key>HibernationFixup</key>
-		<false/>
 		<key>NeverHibernate</key>
 		<false/>
 		<key>NoEarlyProgress</key>
@@ -224,8 +222,6 @@
 			<string>Preboot</string>
 			<string>Recovery</string>
 		</array>
-		<key>KbdPrevLang</key>
-		<false/>
 		<key>Language</key>
 		<string>zh_CN:0</string>
 		<key>Mouse</key>
@@ -235,8 +231,6 @@
 			<key>Speed</key>
 			<integer>8</integer>
 		</dict>
-		<key>PlayAsync</key>
-		<false/>
 		<key>Scan</key>
 		<dict>
 			<key>Entries</key>
@@ -249,23 +243,23 @@
 			<true/>
 		</dict>
 		<key>ScreenResolution</key>
-		<string>3840x2160</string>
+		<string>1920x1080</string>
 		<key>Theme</key>
-		<string>Retina4k</string>
+		<string>embedded</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
 		<key>Inject</key>
 		<dict>
 			<key>ATI</key>
-			<true/>
+			<false/>
 			<key>Intel</key>
 			<false/>
 			<key>NVidia</key>
 			<false/>
 		</dict>
 		<key>RadeonDeInit</key>
-		<true/>
+		<false/>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
@@ -287,7 +281,7 @@
 				<key>Comment</key>
 				<string>USB port limit patch</string>
 				<key>Disabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>
 				g/sPDw==
@@ -307,7 +301,7 @@
 				<key>Comment</key>
 				<string>USB port limit patch</string>
 				<key>Disabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>
 				g+MP0w==
@@ -327,7 +321,7 @@
 				<key>Comment</key>
 				<string>USB Port limit patch</string>
 				<key>Disabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>
 				g/sPDw==
@@ -347,7 +341,7 @@
 				<key>Comment</key>
 				<string>USB Port limit patch</string>
 				<key>Disabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>
 				g/8PDw==
@@ -367,7 +361,7 @@
 				<key>Comment</key>
 				<string>USB port limit patch #1 10.15.x modify by DalianSky(credit ydeng)</string>
 				<key>Disabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>
 				g/sPDw==
@@ -387,7 +381,7 @@
 				<key>Comment</key>
 				<string>USB Port limit patch #2 10.15.x modify by DalianSky</string>
 				<key>Disabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>
 				g/kPDw==
