@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>19A512f</string>
+	<string>19B68f</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -29,17 +29,17 @@
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>11M337n</string>
+	<string>11A1027</string>
 	<key>DTPlatformVersion</key>
 	<string>GM</string>
 	<key>DTSDKBuild</key>
-	<string>19A487k</string>
+	<string>19A547</string>
 	<key>DTSDKName</key>
 	<string>macosx10.15</string>
 	<key>DTXcode</key>
-	<string>1100</string>
+	<string>1110</string>
 	<key>DTXcodeBuild</key>
-	<string>11M337n</string>
+	<string>11A1027</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>as.vit9696.Lilu</key>
@@ -56,6 +56,8 @@
 			<string>IOKit</string>
 		</dict>
 	</dict>
+	<key>LSMinimumSystemVersion</key>
+	<string>10.8</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2016-2018 vit9696. All rights reserved.</string>
 	<key>OSBundleCompatibleVersion</key>
