@@ -58,7 +58,15 @@
 
 个人建议，如果有钱就上 Radeon VII，这个显卡厚度上是 40mm，是没有问题的。
 
+## 更新注意事项
+
+更新 EFI 之后，第一次进系统最好是带 -v 参数启动，否则可能会出现禁止符号，无法启动。如果出现这种情况下，再次启动时，加上 -v 参数就可以了。进入系统之后，最好使用 Hackintool 重建一下驱动缓存。
+
 ## 更新日志
+
+### 2019年12月6日
+
+更新驱动到最新版本。更新 Clover 版本到 5099。
 
 ### 2019年11月1日
 
@@ -82,39 +90,30 @@
 
 这个 EFI 的特点是使用的是 `iMacPro1,1` 机型，用独显硬解，因此 CPU 有无核显都可以正常工作，且比使用核显硬解更正常。已做了 USB 定制，所有 USB 接口都可用，睡眠正常，唤醒正常。
 
-Clover 版本为：5045。
+Clover 版本为：5099。
 
 Clover 驱动包含：
 
 * ApfsDriverLoader.efi
+* AptioMemoryFix.efi
 * EmuVariableUefi.efi
 * FSInject.efi
 * HFSPlus.efi
-* OsxAptioFix2Drv-free2000.efi
 * VirtualSmc.efi
 
 系统驱动包含：
 
-* AppleALC.kext - 1.4.0
-* IntelMausi.kext - 1.0.1
-* Lilu.kext - 1.3.8
+* AppleALC.kext - 1.4.4
+* IntelMausi.kext - 1.0.2
+* Lilu.kext - 1.4.0
 * USBInjectAll.kext - 0.7.1
-* VirtualSMC.kext - 1.0.7
-* WhateverGreen.kext - 1.3.2
-* XHCI-unsupported.kext - 0.9.2
+* VirtualSMC.kext - 1.0.9
+* WhateverGreen.kext - 1.3.5
 
-下面这几个是 VirtualSMC 的插件
+下面这 2 个是 VirtualSMC 的插件
 
-* SMCBatteryManager.kext
-* SMCLightSensor.kext
 * SMCProcessor.kext
 * SMCSuperIO.kext
-
-其中
-* SMCBatteryManager.kext
-* SMCLightSensor.kext
-
-这两个插件对台式机是没有什么用的，可以删掉。我这里保留它们是因为这个版本的 VirtualSMC 1.0.7 并不是官方编译的版本，而是 PCbeta 上的网友 Dynamix 自编译的版本。因为官方版本会导致系统无法正常启动，而这个自编译版本可以正常启动，为了保持这个自编译版本驱动的完整性，因此这里都做了保留。
 
 ## EFI 使用
 
