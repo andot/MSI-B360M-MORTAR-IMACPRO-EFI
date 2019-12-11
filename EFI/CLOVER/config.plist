@@ -147,6 +147,8 @@
 	</dict>
 	<key>Boot</key>
 	<dict>
+		<key>Arguments</key>
+		<string>slide=129</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -395,6 +397,22 @@
 				<key>Replace</key>
 				<data>
 				g/k/Dw==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Enable TRIM for SSD</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				AEFQUExFIFNTRAA=
+				</data>
+				<key>Name</key>
+				<string>com.apple.iokit.IOAHCIBlockStorage</string>
+				<key>Replace</key>
+				<data>
+				AAAAAAAAAAAAAAA=
 				</data>
 			</dict>
 		</array>
