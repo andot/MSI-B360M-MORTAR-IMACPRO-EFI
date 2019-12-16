@@ -64,7 +64,7 @@
 
 ## 更新日志
 
-### 2019年12月6日
+### 2019年12月14日
 
 加入 NightShiftUnlocker.kext。
 更新 WhateverGreen.kext 到 1.3.6。
@@ -121,7 +121,7 @@ Clover 驱动包含：
 * Lilu.kext - 1.4.0
 * USBInjectAll.kext - 0.7.1
 * VirtualSMC.kext - 1.0.9
-* WhateverGreen.kext - 1.3.5
+* WhateverGreen.kext - 1.3.6
 * NightShiftUnlocker.kext - 2.2.1
 
 下面这 2 个是 VirtualSMC 的插件
