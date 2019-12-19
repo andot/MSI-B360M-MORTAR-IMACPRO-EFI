@@ -19,15 +19,21 @@
 
 ## 更新日志
 
+### 2019年12月19日
+
+在 BIOS 中关闭了 `CFG Lock`，因此将 `AppleIntelCPUPM` 和 `内核电源` 两个选项的取消勾选。
+
+
+
 ### 2019年12月18日
 
 *forked from andot*
 
-- 更改 机型为 iMac19,2。
+- 更改 机型为 `iMac19,2`。
 - 根据微星 B360M 迫击炮主板和追风者 MG NEO 410 机箱定制 USB 驱动——
   - 禁用 USB 端口限制补丁
-  - 删除 原 EFI 中的 USBInjectAll.kext
-  - 加入 EFI/CLOVER/ACPI/patched/SSDT-EC.aml 和 EFI/CLOVER/kexts/Other/USBPorts.kext
+  - 删除 原 EFI 中的 `USBInjectAll.kext`
+  - 加入 `EFI/CLOVER/ACPI/patched/SSDT-EC.aml` 和 `EFI/CLOVER/kexts/Other/USBPorts.kext`
 
 ### 2019年12月14日
 
