@@ -260,7 +260,7 @@
 		<key>#FakeCPUID</key>
 		<string>0x010676</string>
 		<key>AppleIntelCPUPM</key>
-		<true/>
+		<false/>
 		<key>AppleRTC</key>
 		<true/>
 		<key>KernelCpu</key>
@@ -268,7 +268,7 @@
 		<key>KernelLapic</key>
 		<false/>
 		<key>KernelPm</key>
-		<true/>
+		<false/>
 		<key>KextsToPatch</key>
 		<array>
 			<dict>
