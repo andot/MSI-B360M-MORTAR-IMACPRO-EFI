@@ -148,7 +148,7 @@
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
-		<string>LastBootedVolume</string>
+		<string>Hackintosh HD</string>
 		<key>NeverHibernate</key>
 		<false/>
 		<key>NoEarlyProgress</key>
@@ -158,7 +158,7 @@
 		<key>SkipHibernateTimeout</key>
 		<false/>
 		<key>Timeout</key>
-		<integer>3</integer>
+		<integer>0</integer>
 		<key>XMPDetection</key>
 		<false/>
 	</dict>
@@ -239,7 +239,7 @@
 		<key>ScreenResolution</key>
 		<string>1920x1080</string>
 		<key>Theme</key>
-		<string>embedded</string>
+		<string>Minimal</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
