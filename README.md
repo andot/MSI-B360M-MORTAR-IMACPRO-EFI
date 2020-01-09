@@ -64,6 +64,11 @@
 
 ## 更新日志
 
+### 2020年1月9日
+
+更新 Clover 版本到 5103。
+更新了一些驱动。
+
 ### 2019年12月14日
 
 加入 NightShiftUnlocker.kext。
@@ -116,10 +121,10 @@ Clover 驱动包含：
 
 系统驱动包含：
 
-* AppleALC.kext - 1.4.4
+* AppleALC.kext - 1.4.5
 * IntelMausi.kext - 1.0.2
-* Lilu.kext - 1.4.0
-* USBInjectAll.kext - 0.7.1
+* Lilu.kext - 1.4.1
+* USBInjectAll.kext - 0.7.4
 * VirtualSMC.kext - 1.0.9
 * WhateverGreen.kext - 1.3.6
 * NightShiftUnlocker.kext - 2.2.1
