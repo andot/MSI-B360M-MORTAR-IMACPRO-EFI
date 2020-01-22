@@ -1,4 +1,4 @@
-# 微星 B360M 迫击炮 + AMD 独显黑苹果 - Clover 引导 EFI
+# 微星 B360M 迫击炮 + AMD 独显黑苹果 - Clover 引导 EFI 
 
 ## 我的配置
 
@@ -24,6 +24,11 @@
 在 BIOS 中关闭了 `CFG Lock`，因此将 `AppleIntelCPUPM` 和 `内核电源` 两个选项的取消勾选。
 
 
+从源库更新了 Clover 和一些驱动。
+
+### 2019年12月19日
+
+在 BIOS 中关闭了 `CFG Lock`，因此将 `AppleIntelCPUPM` 和 `内核电源` 两个选项的取消勾选。
 
 ### 2019年12月18日
 
@@ -34,6 +39,11 @@
   - 禁用 USB 端口限制补丁
   - 删除 原 EFI 中的 `USBInjectAll.kext`
   - 加入 `EFI/CLOVER/ACPI/patched/SSDT-EC.aml` 和 `EFI/CLOVER/kexts/Other/USBPorts.kext`
+
+### 2020年1月9日
+
+更新 Clover 版本到 5103。
+更新了一些驱动。
 
 ### 2019年12月14日
 
@@ -70,7 +80,73 @@
 
 经过一个多月的使用测试后，首次发布。
 
+<<<<<<< HEAD
 ## Geekbench 4 跑分
+=======
+## EFI 简介
+
+这个 EFI 的特点是使用的是 `iMacPro1,1` 机型，用独显硬解，因此 CPU 有无核显都可以正常工作，且比使用核显硬解更正常。已做了 USB 定制，所有 USB 接口都可用，睡眠正常，唤醒正常。
+
+Clover 版本为：5100。
+
+Clover 驱动包含：
+
+* ApfsDriverLoader.efi
+* AptioMemoryFix.efi
+* EmuVariableUefi.efi
+* FSInject.efi
+* HFSPlus.efi
+* VirtualSmc.efi
+
+系统驱动包含：
+
+* AppleALC.kext - 1.4.5
+* IntelMausi.kext - 1.0.2
+* Lilu.kext - 1.4.1
+* USBInjectAll.kext - 0.7.4
+* VirtualSMC.kext - 1.0.9
+* WhateverGreen.kext - 1.3.6
+* NightShiftUnlocker.kext - 2.2.1
+
+下面这 2 个是 VirtualSMC 的插件
+
+* SMCProcessor.kext
+* SMCSuperIO.kext
+
+## EFI 使用
+
+如果你的配置跟我上面配置相同或兼容，那么你可以直接使用该 EFI 进行安装。安装前请注意，一定要用 Clover Configurator 重新生成并替换 SMBIOS 部分的内容，否则会因为机器有同一个硬件 ID 而被苹果封锁。生成时，请选择 `iMacPro1,1` 机型，不要更改机型，如果你的 CPU 有核显，并且核显已经再 BIOS 中打开，也可以选择 `iMac19,2` 机型，这种情况下，核显可以和独显一起工作。
+
+![截图加载失败](ScreenShot/SMBIOS@2x.png)
+
+如果你的显卡跟我一样是 RX 580 8G 2304sp 的话，建议把显卡设置页面设置为下图这样：
+
+![截图加载失败](ScreenShot/GPUConfig@2x.png)
+
+你会发现显卡功耗会降低 20w 左右。
+
+## 小技巧
+
+### 开启原生电源管理
+
+如果你在 BIOS 里面把 `CFG Lock` 选项设置为 `Disable`，那么你还可以用 Clover Configurator 修改配置文件，将 `AppleIntelCPUPM` 和 `内核电源` 两个选项的对勾去掉，这样就可以开启原生电源管理了，据说性能会有微小的一点提升。
+
+### 跟 Windows 和 BIOS 中的时间同步
+
+```
+sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/xiaoMGithub/LocalTime-Toggle/master/fix_time_osx.sh)"
+```
+
+## Geekbench 跑分
+
+* CPU (单核：6079，多核：28401)：https://browser.geekbench.com/v4/cpu/14377865
+* Metal (131638)：https://browser.geekbench.com/v4/compute/4463241
+* OpenCL (133320): https://browser.geekbench.com/v4/compute/4463244
+
+![截图加载失败](ScreenShot/CINEBENCH20@2x.png)
+
+## 系统截图
+>>>>>>> upstream/master
 
 * CPU (单核：5259，多核：21292)：https://browser.geekbench.com/v4/cpu/15048380
 * OpenCL (150951): https://browser.geekbench.com/v4/compute/4671536
