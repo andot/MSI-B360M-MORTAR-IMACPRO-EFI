@@ -66,7 +66,11 @@
 
 ### 2020年3月25日
 
-* 更新 Clover 版本到 5106。
+* 更新 Clover 版本到 5107。
+* 更新 Lilu 到 1.4.3。
+* 更新 AppleALC 到 1.4.8。
+* 更新 VirtualSMC 到 1.1.1。
+* 更新 WhateverGreen 到 1.3.7（[ayun2001 魔改版](http://bbs.pcbeta.com/viewthread-1847847-1-1.html)）
 * 可以正常升级到 macOS Catalina 10.15.4。
 * 自己又增加了 2 条 16G 内存，现在有 64G 内存了。
 
