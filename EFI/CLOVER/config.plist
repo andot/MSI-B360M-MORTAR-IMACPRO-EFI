@@ -237,9 +237,9 @@
 			<true/>
 		</dict>
 		<key>ScreenResolution</key>
-		<string>1920x1080</string>
+		<string>3840×2160</string>
 		<key>Theme</key>
-		<string>embedded</string>
+		<string>Catalina4k</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -260,15 +260,13 @@
 		<key>#FakeCPUID</key>
 		<string>0x010676</string>
 		<key>AppleIntelCPUPM</key>
-		<true/>
+		<false/>
 		<key>AppleRTC</key>
 		<true/>
 		<key>KernelCpu</key>
 		<false/>
 		<key>KernelLapic</key>
 		<false/>
-		<key>KernelPm</key>
-		<true/>
 		<key>KextsToPatch</key>
 		<array>
 			<dict>
@@ -397,39 +395,41 @@
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
 		<string>0x67</string>
+		<key>ROM</key>
+		<data>2CTlGFMv</data>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>04/22/2019</string>
+		<string>04/23/2020</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>IMP11.88Z.F000.B00.1904222000</string>
+		<string>IM191.88Z.F000.B00.2004232100</string>
 		<key>Board-ID</key>
-		<string>Mac-7BA5B2D9E42DDD94</string>
+		<string>Mac-63001698E7A34814</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02748902CDJG36UE</string>
+		<string>C02031501J9KGQGFB</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
 		<string>1.0</string>
 		<key>ChassisAssetTag</key>
-		<string>iMacPro-Aluminum</string>
+		<string>iMac-Aluminum</string>
 		<key>ChassisManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>ChassisType</key>
 		<string>0x09</string>
 		<key>EfiVersion</key>
-		<string>220.260.170.0.0</string>
+		<string>1037.120.79.0.0</string>
 		<key>Family</key>
-		<string>iMac Pro</string>
+		<string>iMac</string>
 		<key>FirmwareFeatures</key>
-		<string>0xFD8FF53F</string>
+		<string>0xFD8FF576</string>
 		<key>FirmwareFeaturesMask</key>
-		<string>0xFF9FFF3F</string>
+		<string>0xFFDFFF7F</string>
 		<key>LocationInChassis</key>
 		<string>Part Component</string>
 		<key>Manufacturer</key>
@@ -437,13 +437,13 @@
 		<key>Mobile</key>
 		<false/>
 		<key>PlatformFeature</key>
-		<string>0xFFFF</string>
+		<string>0x20</string>
 		<key>ProductName</key>
-		<string>iMacPro1,1</string>
+		<string>iMac19,2</string>
 		<key>SerialNumber</key>
-		<string>C02VRTZFHX87</string>
+		<string>C02D5WYAJWDW</string>
 		<key>SmUUID</key>
-		<string>EF177C64-8AE8-4FDD-9C3E-C0454FC0409E</string>
+		<string>64999785-DFFA-4078-A322-0139E318532F</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>

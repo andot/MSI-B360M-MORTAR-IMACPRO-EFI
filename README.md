@@ -58,11 +58,19 @@
 
 个人建议，如果有钱就上 Radeon VII，这个显卡厚度上是 40mm，是没有问题的。
 
-## 更新注意事项
-
-更新 EFI 之后，第一次进系统最好是带 -v 参数启动，否则可能会出现禁止符号，无法启动。如果出现这种情况下，再次启动时，加上 -v 参数就可以了。进入系统之后，最好使用 Hackintool 重建一下驱动缓存。
-
 ## 更新日志
+
+### 2020年7月4日
+
+* 更新 Clover 版本到 5119。
+* 默认改为 OC 0.6.0 启动（修改自：https://github.com/GeQ1an/MSI-B360M-MORTAR-HACKINTOSH-OPENCORE-EFI）。
+* OC 下 Lilu 更新到 1.4.5。
+* OC 下 WhateverGreen 更新到 1.4.0。
+* AppleALC 更新到 1.5.0。
+* IntelMausi 更新到 1.0.3。
+* VirtualSMC 更新到 1.1.4。
+* 增加了 USBPorts.kext 和 USBPower.kext。
+* 默认机型改为 iMac19,2（因为我的 i7-8700 跟这个机型最匹配）。
 
 ### 2020年5月28日
 
@@ -131,53 +139,25 @@
 
 * 经过一个多月的使用测试后，首次发布。
 
-## EFI 简介
-
-这个 EFI 的特点是使用的是 `iMacPro1,1` 机型，用独显硬解，因此 CPU 有无核显都可以正常工作，且比使用核显硬解更正常。已做了 USB 定制，所有 USB 接口都可用，睡眠正常，唤醒正常。
-
-Clover 版本为：5100。
-
-Clover 驱动包含：
-
-* ApfsDriverLoader.efi
-* AptioMemoryFix.efi
-* EmuVariableUefi.efi
-* FSInject.efi
-* HFSPlus.efi
-* VirtualSmc.efi
-
-系统驱动包含：
-
-* AppleALC.kext - 1.4.5
-* IntelMausi.kext - 1.0.2
-* Lilu.kext - 1.4.1
-* USBInjectAll.kext - 0.7.4
-* VirtualSMC.kext - 1.0.9
-* WhateverGreen.kext - 1.3.6
-* NightShiftUnlocker.kext - 2.2.1
-
-下面这 2 个是 VirtualSMC 的插件
-
-* SMCProcessor.kext
-* SMCSuperIO.kext
-
 ## EFI 使用
 
-如果你的配置跟我上面配置相同或兼容，那么你可以直接使用该 EFI 进行安装。安装前请注意，一定要用 Clover Configurator 重新生成并替换 SMBIOS 部分的内容，否则会因为机器有同一个硬件 ID 而被苹果封锁。生成时，请选择 `iMacPro1,1` 机型，不要更改机型，如果你的 CPU 有核显，并且核显已经再 BIOS 中打开，也可以选择 `iMac19,2` 机型，这种情况下，核显可以和独显一起工作。
+关于三码修改和 BIOS 设置部分请参考：https://github.com/GeQ1an/MSI-B360M-MORTAR-HACKINTOSH-OPENCORE-EFI#%E4%BD%BF%E7%94%A8-efi
 
-![截图加载失败](ScreenShot/SMBIOS@2x.png)
+我的配置是 i7-8700，并且有 RX 580，跟 iMac19,2 这个机型更匹配。如果你是 9 代 CPU，按照上面链接中的说明来设置。
 
-如果你的显卡跟我一样是 RX 580 8G 2304sp 的话，建议把显卡设置页面设置为下图这样：
+## 感谢
 
-![截图加载失败](ScreenShot/GPUConfig@2x.png)
-
-你会发现显卡功耗会降低 20w 左右。
+* [SuperNG6](https://sleele.com/)
+* [GeQ1an](https://github.com/GeQ1an/MSI-B360M-MORTAR-HACKINTOSH-OPENCORE-EFI)
+* [黑果小兵](https://blog.daliansky.net/)
+* [xin](https://blog.xjn819.com/)
+* [Bat.bat](https://github.com/williambj1/OpenCore-Factory)
 
 ## 小技巧
 
-### 开启原生电源管理
+### 如何更换成 Clover 启动
 
-如果你在 BIOS 里面把 `CFG Lock` 选项设置为 `Disable`，那么你还可以用 Clover Configurator 修改配置文件，将 `AppleIntelCPUPM` 和 `内核电源` 两个选项的对勾去掉，这样就可以开启原生电源管理了，据说性能会有微小的一点提升。
+把 EFI/CLOVER/CLOVERX64.efi 复制到 /EFI/BOOT 下，改名覆盖 BOOTx64.efi 就可以了，注意备份原来的 BOOTx64.efi，想要使用 OC 启动的时候还原备份的 BOOTx64.efi 就可以了。
 
 ### 跟 Windows 和 BIOS 中的时间同步
 
