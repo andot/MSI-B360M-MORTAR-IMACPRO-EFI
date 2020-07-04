@@ -63,7 +63,7 @@
 ### 2020年7月4日
 
 * 更新 Clover 版本到 5119。
-* 默认改为 OC 0.6.0 启动（修改自：https://github.com/GeQ1an/MSI-B360M-MORTAR-HACKINTOSH-OPENCORE-EFI）。
+* 默认改为 OC 0.6.0 启动（修改自：[MSI-B360M-MORTAR-HACKINTOSH-OPENCORE-EFI](https://github.com/GeQ1an/MSI-B360M-MORTAR-HACKINTOSH-OPENCORE-EFI)）。
 * OC 下 Lilu 更新到 1.4.5。
 * OC 下 WhateverGreen 更新到 1.4.0。
 * AppleALC 更新到 1.5.0。
