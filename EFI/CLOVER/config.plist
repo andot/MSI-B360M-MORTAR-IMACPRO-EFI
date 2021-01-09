@@ -4,128 +4,6 @@
 <dict>
 	<key>ACPI</key>
 	<dict>
-		<key>AutoMerge</key>
-		<false/>
-		<key>DSDT</key>
-		<dict>
-			<key>#DropOEM_DSM</key>
-			<dict>
-				<key>ATI</key>
-				<true/>
-				<key>Firewire</key>
-				<true/>
-				<key>HDA</key>
-				<true/>
-				<key>HDMI</key>
-				<true/>
-				<key>IDE</key>
-				<true/>
-				<key>IntelGFX</key>
-				<true/>
-				<key>LAN</key>
-				<true/>
-				<key>LPC</key>
-				<false/>
-				<key>NVidia</key>
-				<true/>
-				<key>SATA</key>
-				<true/>
-				<key>SmBUS</key>
-				<false/>
-				<key>USB</key>
-				<true/>
-				<key>WIFI</key>
-				<true/>
-			</dict>
-			<key>Debug</key>
-			<false/>
-			<key>Fixes</key>
-			<dict>
-				<key>AddDTGP</key>
-				<false/>
-				<key>AddHDMI</key>
-				<false/>
-				<key>AddIMEI</key>
-				<false/>
-				<key>AddMCHC</key>
-				<false/>
-				<key>AddPNLF</key>
-				<false/>
-				<key>DeleteUnused</key>
-				<false/>
-				<key>FakeLPC</key>
-				<false/>
-				<key>FixACST</key>
-				<false/>
-				<key>FixADP1</key>
-				<false/>
-				<key>FixAirport</key>
-				<false/>
-				<key>FixDarwin</key>
-				<false/>
-				<key>FixDarwin7</key>
-				<false/>
-				<key>FixDisplay</key>
-				<false/>
-				<key>FixFirewire</key>
-				<false/>
-				<key>FixHDA</key>
-				<false/>
-				<key>FixHPET</key>
-				<false/>
-				<key>FixIDE</key>
-				<false/>
-				<key>FixIPIC</key>
-				<false/>
-				<key>FixIntelGfx</key>
-				<false/>
-				<key>FixLAN</key>
-				<false/>
-				<key>FixMutex</key>
-				<false/>
-				<key>FixRTC</key>
-				<false/>
-				<key>FixRegions</key>
-				<false/>
-				<key>FixS3D</key>
-				<false/>
-				<key>FixSATA</key>
-				<false/>
-				<key>FixSBUS</key>
-				<false/>
-				<key>FixShutdown</key>
-				<false/>
-				<key>FixTMR</key>
-				<false/>
-				<key>FixUSB</key>
-				<false/>
-				<key>FixWAK</key>
-				<false/>
-			</dict>
-			<key>Patches</key>
-			<array>
-				<dict>
-					<key>Comment</key>
-					<string>Fix MSI B360M Mortal DSDT Device(RTC) bug on BIOS v1.60</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>oAqTU1RBUwE=</data>
-					<key>Replace</key>
-					<data>oAqRCv8L//8=</data>
-				</dict>
-			</array>
-			<key>ReuseFFFF</key>
-			<false/>
-			<key>SlpSmiAtWake</key>
-			<false/>
-			<key>SuspendOverride</key>
-			<false/>
-		</dict>
-		<key>FixHeaders</key>
-		<false/>
-		<key>HaltEnabler</key>
-		<false/>
 		<key>SSDT</key>
 		<dict>
 			<key>DropOem</key>
@@ -140,13 +18,131 @@
 				<true/>
 			</dict>
 		</dict>
+		<key>AutoMerge</key>
+		<false/>
+		<key>DSDT</key>
+		<dict>
+			<key>SlpSmiAtWake</key>
+			<false/>
+			<key>Patches</key>
+			<array>
+				<dict>
+					<key>Find</key>
+					<data>oAqTU1RBUwE=</data>
+					<key>Replace</key>
+					<data>oAqRCv8L//8=</data>
+					<key>Disabled</key>
+					<false/>
+					<key>Comment</key>
+					<string>Fix MSI B360M Mortal DSDT Device(RTC) bug on BIOS v1.60</string>
+				</dict>
+			</array>
+			<key>SuspendOverride</key>
+			<false/>
+			<key>Fixes</key>
+			<dict>
+				<key>FixIDE</key>
+				<false/>
+				<key>AddHDMI</key>
+				<false/>
+				<key>FixIntelGfx</key>
+				<false/>
+				<key>FixACST</key>
+				<false/>
+				<key>FakeLPC</key>
+				<false/>
+				<key>FixFirewire</key>
+				<false/>
+				<key>FixShutdown</key>
+				<false/>
+				<key>FixDisplay</key>
+				<false/>
+				<key>AddIMEI</key>
+				<false/>
+				<key>FixHPET</key>
+				<false/>
+				<key>AddMCHC</key>
+				<false/>
+				<key>FixAirport</key>
+				<false/>
+				<key>FixDarwin7</key>
+				<false/>
+				<key>FixRTC</key>
+				<false/>
+				<key>AddPNLF</key>
+				<false/>
+				<key>FixLAN</key>
+				<false/>
+				<key>FixS3D</key>
+				<false/>
+				<key>FixRegions</key>
+				<false/>
+				<key>DeleteUnused</key>
+				<false/>
+				<key>AddDTGP</key>
+				<false/>
+				<key>FixSBUS</key>
+				<false/>
+				<key>FixSATA</key>
+				<false/>
+				<key>FixTMR</key>
+				<false/>
+				<key>FixMutex</key>
+				<false/>
+				<key>FixUSB</key>
+				<false/>
+				<key>FixWAK</key>
+				<false/>
+				<key>FixDarwin</key>
+				<false/>
+				<key>FixHDA</key>
+				<false/>
+				<key>FixADP1</key>
+				<false/>
+				<key>FixIPIC</key>
+				<false/>
+			</dict>
+			<key>#DropOEM_DSM</key>
+			<dict>
+				<key>USB</key>
+				<true/>
+				<key>SmBUS</key>
+				<false/>
+				<key>ATI</key>
+				<true/>
+				<key>HDMI</key>
+				<true/>
+				<key>LAN</key>
+				<true/>
+				<key>IntelGFX</key>
+				<true/>
+				<key>WIFI</key>
+				<true/>
+				<key>LPC</key>
+				<false/>
+				<key>Firewire</key>
+				<true/>
+				<key>IDE</key>
+				<true/>
+				<key>NVidia</key>
+				<true/>
+				<key>HDA</key>
+				<true/>
+				<key>SATA</key>
+				<true/>
+			</dict>
+			<key>Debug</key>
+			<false/>
+			<key>ReuseFFFF</key>
+			<false/>
+		</dict>
+		<key>HaltEnabler</key>
+		<false/>
+		<key>FixHeaders</key>
+		<false/>
 	</dict>
 	<key>Boot</key>
 	<dict>
-		<key>Arguments</key>
-		<string>slide=129</string>
-		<key>Debug</key>
-		<false/>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>NeverHibernate</key>
@@ -155,12 +151,47 @@
 		<true/>
 		<key>Secure</key>
 		<false/>
-		<key>SkipHibernateTimeout</key>
+		<key>Debug</key>
+		<false/>
+		<key>Arguments</key>
+		<string>shikigva=80 igfxfw=2</string>
+		<key>XMPDetection</key>
 		<false/>
 		<key>Timeout</key>
 		<integer>3</integer>
-		<key>XMPDetection</key>
+		<key>SkipHibernateTimeout</key>
 		<false/>
+	</dict>
+	<key>GUI</key>
+	<dict>
+		<key>Theme</key>
+		<string>Catalina4k</string>
+		<key>Mouse</key>
+		<dict>
+			<key>Speed</key>
+			<integer>8</integer>
+			<key>Enabled</key>
+			<true/>
+		</dict>
+		<key>KbdPrevLang</key>
+		<false/>
+		<key>Hide</key>
+		<array>
+			<string>BOOTX64.EFI</string>
+		</array>
+		<key>Scan</key>
+		<dict>
+			<key>Tool</key>
+			<true/>
+			<key>Entries</key>
+			<true/>
+			<key>Legacy</key>
+			<false/>
+			<key>Linux</key>
+			<true/>
+		</dict>
+		<key>ScreenResolution</key>
+		<string>3840×2160</string>
 	</dict>
 	<key>BootGraphics</key>
 	<dict>
@@ -169,15 +200,6 @@
 	</dict>
 	<key>Devices</key>
 	<dict>
-		<key>Audio</key>
-		<dict>
-			<key>AFGLowPowerState</key>
-			<false/>
-			<key>Inject</key>
-			<string>No</string>
-			<key>ResetHDA</key>
-			<false/>
-		</dict>
 		<key>LANInjection</key>
 		<false/>
 		<key>Properties</key>
@@ -190,15 +212,24 @@
 				<data>DwAAAA==</data>
 			</dict>
 		</dict>
+		<key>Audio</key>
+		<dict>
+			<key>ResetHDA</key>
+			<false/>
+			<key>AFGLowPowerState</key>
+			<false/>
+			<key>Inject</key>
+			<string>No</string>
+		</dict>
 		<key>USB</key>
 		<dict>
-			<key>AddClockID</key>
-			<true/>
 			<key>FixOwnership</key>
 			<true/>
-			<key>HighCurrent</key>
+			<key>AddClockID</key>
 			<true/>
 			<key>Inject</key>
+			<true/>
+			<key>HighCurrent</key>
 			<true/>
 		</dict>
 		<key>UseIntelHDMI</key>
@@ -208,41 +239,10 @@
 	<array>
 		<string>Nothing</string>
 	</array>
-	<key>GUI</key>
-	<dict>
-		<key>Hide</key>
-		<array>
-			<string>BOOTX64.EFI</string>
-			<string>Preboot</string>
-			<string>Recovery</string>
-		</array>
-		<key>Language</key>
-		<string>zh_CN:0</string>
-		<key>Mouse</key>
-		<dict>
-			<key>Enabled</key>
-			<true/>
-			<key>Speed</key>
-			<integer>8</integer>
-		</dict>
-		<key>Scan</key>
-		<dict>
-			<key>Entries</key>
-			<true/>
-			<key>Legacy</key>
-			<false/>
-			<key>Linux</key>
-			<true/>
-			<key>Tool</key>
-			<true/>
-		</dict>
-		<key>ScreenResolution</key>
-		<string>3840×2160</string>
-		<key>Theme</key>
-		<string>Catalina4k</string>
-	</dict>
 	<key>Graphics</key>
 	<dict>
+		<key>RadeonDeInit</key>
+		<false/>
 		<key>Inject</key>
 		<dict>
 			<key>ATI</key>
@@ -252,151 +252,143 @@
 			<key>NVidia</key>
 			<false/>
 		</dict>
-		<key>RadeonDeInit</key>
-		<false/>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
-		<key>#FakeCPUID</key>
-		<string>0x010676</string>
-		<key>AppleIntelCPUPM</key>
-		<false/>
 		<key>AppleRTC</key>
 		<true/>
-		<key>KernelCpu</key>
-		<false/>
 		<key>KernelLapic</key>
 		<false/>
 		<key>KextsToPatch</key>
 		<array>
 			<dict>
+				<key>Find</key>
+				<data>g/sPDw==</data>
 				<key>Comment</key>
 				<string>USB port limit patch</string>
 				<key>Disabled</key>
 				<true/>
-				<key>Find</key>
-				<data>g/sPDw==</data>
 				<key>InfoPlistPatch</key>
 				<false/>
-				<key>MatchOS</key>
-				<string>10.14.x</string>
 				<key>Name</key>
 				<string>com.apple.iokit.IOUSBHostFamily</string>
 				<key>Replace</key>
 				<data>g/s/Dw==</data>
+				<key>MatchOS</key>
+				<string>10.14.x</string>
 			</dict>
 			<dict>
+				<key>Find</key>
+				<data>g+MP0w==</data>
 				<key>Comment</key>
 				<string>USB port limit patch</string>
 				<key>Disabled</key>
 				<true/>
-				<key>Find</key>
-				<data>g+MP0w==</data>
 				<key>InfoPlistPatch</key>
 				<false/>
-				<key>MatchOS</key>
-				<string>10.14.x</string>
 				<key>Name</key>
 				<string>com.apple.iokit.IOUSBHostFamily</string>
 				<key>Replace</key>
 				<data>g+M/0w==</data>
+				<key>MatchOS</key>
+				<string>10.14.x</string>
 			</dict>
 			<dict>
+				<key>Find</key>
+				<data>g/sPDw==</data>
 				<key>Comment</key>
 				<string>USB Port limit patch</string>
 				<key>Disabled</key>
 				<true/>
-				<key>Find</key>
-				<data>g/sPDw==</data>
 				<key>InfoPlistPatch</key>
 				<false/>
-				<key>MatchOS</key>
-				<string>10.14.x</string>
 				<key>Name</key>
 				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
 				<data>g/s/Dw==</data>
+				<key>MatchOS</key>
+				<string>10.14.x</string>
 			</dict>
 			<dict>
+				<key>Find</key>
+				<data>g/8PDw==</data>
 				<key>Comment</key>
 				<string>USB Port limit patch</string>
 				<key>Disabled</key>
 				<true/>
-				<key>Find</key>
-				<data>g/8PDw==</data>
 				<key>InfoPlistPatch</key>
 				<false/>
-				<key>MatchOS</key>
-				<string>10.14.x</string>
 				<key>Name</key>
 				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
 				<data>g/8/Dw==</data>
+				<key>MatchOS</key>
+				<string>10.14.x</string>
 			</dict>
 			<dict>
+				<key>Find</key>
+				<data>g/sPDw==</data>
 				<key>Comment</key>
 				<string>USB port limit patch #1 10.15.x modify by DalianSky(credit ydeng)</string>
 				<key>Disabled</key>
 				<true/>
-				<key>Find</key>
-				<data>g/sPDw==</data>
 				<key>InfoPlistPatch</key>
 				<false/>
-				<key>MatchOS</key>
-				<string>10.15.x</string>
 				<key>Name</key>
 				<string>com.apple.iokit.IOUSBHostFamily</string>
 				<key>Replace</key>
 				<data>g/s/Dw==</data>
+				<key>MatchOS</key>
+				<string>10.15.x</string>
 			</dict>
 			<dict>
+				<key>Find</key>
+				<data>g/kPDw==</data>
 				<key>Comment</key>
 				<string>USB Port limit patch #2 10.15.x modify by DalianSky</string>
 				<key>Disabled</key>
 				<true/>
-				<key>Find</key>
-				<data>g/kPDw==</data>
 				<key>InfoPlistPatch</key>
 				<false/>
-				<key>MatchOS</key>
-				<string>10.15.x</string>
 				<key>Name</key>
 				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
 				<data>g/k/Dw==</data>
+				<key>MatchOS</key>
+				<string>10.15.x</string>
 			</dict>
 			<dict>
-				<key>Comment</key>
-				<string>Enable TRIM for SSD</string>
-				<key>Disabled</key>
-				<false/>
 				<key>Find</key>
 				<data>AEFQUExFIFNTRAA=</data>
-				<key>InfoPlistPatch</key>
-				<false/>
 				<key>Name</key>
 				<string>com.apple.iokit.IOAHCIBlockStorage</string>
 				<key>Replace</key>
 				<data>AAAAAAAAAAAAAAA=</data>
+				<key>Disabled</key>
+				<false/>
+				<key>Comment</key>
+				<string>Enable TRIM for SSD</string>
+				<key>InfoPlistPatch</key>
+				<false/>
 			</dict>
 		</array>
-	</dict>
-	<key>KernelAndKextPatchesKextsToPatch</key>
-	<dict>
-		<key>1</key>
-		<dict>
-			<key>Disabled</key>
-			<true/>
-		</dict>
+		<key>PanicNoKextDump</key>
+		<true/>
+		<key>#FakeCPUID</key>
+		<string>0x010676</string>
+		<key>AppleIntelCPUPM</key>
+		<false/>
+		<key>KernelCpu</key>
+		<false/>
 	</dict>
 	<key>RtVariables</key>
 	<dict>
+		<key>ROM</key>
+		<string>UseMacAddr0</string>
 		<key>BooterConfig</key>
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
 		<string>0x67</string>
-		<key>ROM</key>
-		<data>2CTlGFMv</data>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
@@ -453,6 +445,45 @@
 		<string>Yes</string>
 		<key>InjectSystemID</key>
 		<true/>
+	</dict>
+	<key>Quirks</key>
+	<dict>
+		<key>EnableWriteUnprotector</key>
+		<true/>
+		<key>EnableSafeModeSlide</key>
+		<true/>
+		<key>ProtectUefiServices</key>
+		<true/>
+		<key>AvoidRuntimeDefrag</key>
+		<true/>
+		<key>ProvideConsoleGopEnable</key>
+		<true/>
+		<key>DevirtualiseMmio</key>
+		<true/>
+		<key>SyncRuntimePermissions</key>
+		<true/>
+		<key>ProvideCustomSlide</key>
+		<true/>
+		<key>XhciPortLimit</key>
+		<true/>
+		<key>PowerTimeoutKernelPanic</key>
+		<true/>
+		<key>SetupVirtualMap</key>
+		<true/>
+		<key>DisableLinkeditJettison</key>
+		<true/>
+		<key>RebuildAppleMemoryMap</key>
+		<true/>
+		<key>FuzzyMatch</key>
+		<true/>
+	</dict>
+	<key>KernelAndKextPatchesKextsToPatch</key>
+	<dict>
+		<key>1</key>
+		<dict>
+			<key>Disabled</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>
