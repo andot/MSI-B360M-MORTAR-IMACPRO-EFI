@@ -60,6 +60,13 @@
 
 ## 更新日志
 
+### 2021年6月22日
+
+* 删除 OC。
+* 更新 Clover 到 5137 版本。
+* 驱动更新为最新版本。
+* 支持 Big Sur 升级到 11.4。
+
 ### 2021年1月10日
 
 * 更新 OC 到 0.6.5 版本。
@@ -173,15 +180,15 @@
 
 ## 小技巧
 
-### 如何更换成 Clover 启动
-
-把 EFI/CLOVER/CLOVERX64.efi 复制到 /EFI/BOOT 下，改名覆盖 BOOTx64.efi 就可以了，注意备份原来的 BOOTx64.efi，想要使用 OC 启动的时候还原备份的 BOOTx64.efi 就可以了。
-
 ### 跟 Windows 和 BIOS 中的时间同步
 
 ```
 sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/xiaoMGithub/LocalTime-Toggle/master/fix_time_osx.sh)"
 ```
+
+### 启动死机
+
+如果电脑重启，可能会出现启动界面卡死，也没有读盘的情况，这种情况下，关机重启就可以了。升级过程中重启时也会有这种情况出现，解决方法相同。
 
 ## Geekbench 跑分
 
