@@ -20,7 +20,7 @@
 	<string>1.0</string>
 	<key>IOKitPersonalities_x86_64</key>
 	<dict>
-		<key>iMac19,2</key>
+		<key>iMac19,1</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.AppleUSBHostMergeProperties</string>
@@ -40,7 +40,7 @@
 				<integer>5100</integer>
 			</dict>
 			<key>model</key>
-			<string>iMac19,2</string>
+			<string>iMac19,1</string>
 		</dict>
 	</dict>
 	<key>OSBundleRequired</key>
