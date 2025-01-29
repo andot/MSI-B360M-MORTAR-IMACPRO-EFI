@@ -7,35 +7,31 @@
 |               主板 | 微星 B360M 迫击炮                       |
 |                CPU | Intel Core i7-8700                      |
 |               显卡 | 蓝宝石 RX580 8G 2304SP 白金版 1366MHz   |
-|              硬盘1 | 三星 970 Pro 1T M2 NVMe                 |
-|              硬盘2 | 三星 SM961 512G M2 NVMe                 |
-|              硬盘3 | 东芝 TR200 960G SSD SATA                |
-|               内存 | 英睿达镁光 DDR4 2666Mhz 16G*2 (共 32G)  |
+|              硬盘1 | 三星 970 Pro 1T M2 NVMe（Windows 系统） |
+|              硬盘2 | 三星 SM961 512G M2 NVMe（MacOS 系统）   |
+|              硬盘3 | 东芝 TR200 960G SSD SATA（数据盘）      |
+|               内存 | 英睿达镁光 DDR4 2666Mhz 16G*4 (共 64G)  |
 |        无线 + 蓝牙 | BCM943602CS 双频 BT4.1 无线网卡 PCI-E   |
-|    摄像头 + 麦克风 | 蓝色妖姬 480p USB2 摄像头带内置麦克风   |
-| 机箱 + 电源 + 风扇 | 酷冷至尊Q300L机箱，MWE500电源，风扇 * 3 |
-|               键盘 | 罗技 K780                               |
-|               鼠标 | 罗技 M590                               |
-|      USB3.1 Type-C | Type-E 转为 Type-C 的 USB 3.1 的挡板线  |
+|        机箱 + 电源 | 酷冷至尊Q300L机箱，海韵FOCUS GX-850电源 |
 |            显示器1 | 43寸 4K 飞利浦显示器 BDM4350UC          |
-|            显示器2 | 23寸 1080p AOC 显示器 2367              |
-|             读卡器 | 绿联 USB 3.0 四合一读卡器               |
+|         显示器2、3 | 28寸 4K 泰坦军团显示器 P28H2V           |
+|      USB3.1 Type-C | Type-E 转为 Type-C 的 USB 3.1 的挡板线  |
 
 ## 兼容本 EFI 的设备
 
 |               硬件 | 型号                                                        |
 |-------------------:|:------------------------------------------------------------|
 |               主板 | 微星 B360M 迫击炮（钛金版）                                 |
-|                CPU | Intel 8代、9代酷睿处理器，有无核显都可以                    |
+|                CPU | Intel 8代、9代酷睿处理器，最好有核显                        |
 |               显卡 | RX560、RX570、RX580、RX590、Vega56、Vega64、Radeon VII      |
 |               硬盘 | 除了几个特别，比如 PM981、970 Evo Plus 等，其它的应该都可以 |
 |               内存 | 其它的没试过，反正镁光的没问题                              |
 |        无线 + 蓝牙 | 淘宝上很多苹果免驱的无线 + 蓝牙的 PCI-E 卡都可以            |
-|    摄像头 + 麦克风 | 只要是苹果上免驱的都可以                                    |
-| 机箱 + 电源 + 风扇 | 根据你的爱好和CPU、显卡的功率来决定                         |
-|        键盘 + 鼠标 | 根据个人爱好任意选择                                        |
+|        机箱 + 电源 | 根据你的爱好和CPU、显卡的功率来决定                         |
 |             显示器 | 根据个人爱好任意选择                                        |
 |             读卡器 | 只要是苹果上免驱的都可以                                    |
+|        键盘 + 鼠标 | 根据个人爱好任意选择                                        |
+|    摄像头 + 麦克风 | 只要是苹果上免驱的都可以                                    |
 |           其它外设 | 根据个人爱好随意选配                                        |
 
 ## 显卡选择注意事项
@@ -56,9 +52,14 @@
 
 跟无线网卡一起插入可能有一定的冲突，但如果无线网卡比较薄，或自己想办法打磨一下，机箱又采用横放的话，也许可以避免显卡风扇刮到无线网卡，但我个人不建议冒这个风险。
 
-个人建议，如果有钱就上 Radeon VII，这个显卡厚度上是 40mm，是没有问题的。
-
 ## 更新日志
+
+### 2025年1月29日（大年初一）
+
+* 更新 OC 到 1.0.3。
+* 删除 Clover。
+* 驱动更新为最新版本。
+* 支持 MacOS 升级到 Sequoia 15.3。
 
 ### 2021年6月22日
 
@@ -168,8 +169,6 @@
 
 关于三码修改和 BIOS 设置部分请参考：https://github.com/GeQ1an/MSI-B360M-MORTAR-HACKINTOSH-OPENCORE-EFI#%E4%BD%BF%E7%94%A8-efi
 
-我的配置是 i7-8700，并且有 RX 580，跟 iMac19,2 这个机型更匹配。如果你是 9 代 CPU，按照上面链接中的说明来设置。
-
 ## 感谢
 
 * [SuperNG6](https://sleele.com/)
@@ -186,17 +185,20 @@
 sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/xiaoMGithub/LocalTime-Toggle/master/fix_time_osx.sh)"
 ```
 
-### 启动死机
+### 更新卡住
 
-如果电脑重启，可能会出现启动界面卡死，也没有读盘的情况，这种情况下，关机重启就可以了。升级过程中重启时也会有这种情况出现，解决方法相同。
+电脑更新重启后，可能会出现更新安装到一定进度后，界面卡死不动，也没有读盘的情况，这种情况下，关机重启就可以继续更新了。
 
-## Geekbench 跑分
+### 无线网卡
 
-* CPU (单核：6079，多核：28401)：https://browser.geekbench.com/v4/cpu/14377865
-* Metal (131638)：https://browser.geekbench.com/v4/compute/4463241
-* OpenCL (133320): https://browser.geekbench.com/v4/compute/4463244
+无线网卡如果跟我一样是 BCM943602CS 的话，需要用 OpenCore Legacy Patcher 安装一下 Root Patch。
+![截图加载失败](ScreenShot/RootPatch@2x.png)
 
-![截图加载失败](ScreenShot/CINEBENCH20@2x.png)
+## Geekbench 6.3.0 跑分
+
+* CPU (单核：1535，多核：6794)：https://browser.geekbench.com/v6/cpu/10175452
+* Metal (62654)：https://browser.geekbench.com/v6/compute/3564445
+* OpenCL (48600): https://browser.geekbench.com/v6/compute/3564419
 
 ## 系统截图
 
@@ -212,5 +214,3 @@ sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/xiaoMGithub/LocalTime
 ![截图加载失败](ScreenShot/Wifi@2x.png)
 ![截图加载失败](ScreenShot/BT@2x.png)
 ![截图加载失败](ScreenShot/GPU_Monitor@2x.png)
-![截图加载失败](ScreenShot/GraphicsDriver@2x.png)
-![截图加载失败](ScreenShot/HWMonitorSMC2@2x.png)
